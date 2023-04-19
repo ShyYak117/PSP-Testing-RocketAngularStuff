@@ -1,0 +1,6 @@
+function [sigStrength,fftArray,L_signal] = fftSignalStrength(noisyData_xlsx)
+    sigStrength = xlsread(noisyData_xlsx,'V:V'); % signal strength dB
+    L_signal = length(sigStrength);
+    DC_off = mean
+    fftArray = fft(sigStrength); 
+end
